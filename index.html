@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="clock-boder">
+        <!-- display current time -->
+        <h1 id="curr-time"></h1>
+        <div id="set-time-container">
+            <!-- setting alarm -->
+            <div class="inline">
+                <input type="number" id="hourInput" class="set-alarm" value="1" min="1" max="12" />
+                <input type="number" id="minInput" class="set-alarm" value="00" min="0" max="59" />
+                <input type="number" id="secInput" class="set-alarm" value="00" min="0" max="59" />
+                <select id="select-container" class="set-alarm">
+                    <option value="AM"> AM </option>
+                    <option value="PM"> PM </option>
+                </select>
+            </div>
+            <!-- set alarm button -->
+            <div class="inline">
+                <button id="alarm-btn" class="set-alarm">Set Alarm</button>
+            </div>
+        </div>
+        <!-- All alarm -->
+        <div>
+            <h1>Alarms</h1>
+            <ul id="alarm-list" class="align">
+            </ul>
+        </div>
+    </div>
+    <script src='index.js'></script>
+</body>
+
+</html>
